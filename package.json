@@ -5,7 +5,7 @@
   "author": "Goffert van Gool",
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c",
+    "build": "echo 'done'",
     "dev": "browser-sync start --config browsersync.config.js",
     "test": "karma start",
     "guard": "karma start --no-single-run"

@@ -6,6 +6,10 @@ shell:
 	docker run -it --rm -v $$PWD:/app ruphin/webdev bash
 .PHONY: shell
 
-production:
+.PHONY: build
+build:
+	docker run -it --rm -v $$PWD:/app ruphin/webdev npm run build
+
+production: build
 	docker build -t ruphin/devdays .
 .PHONY: production
