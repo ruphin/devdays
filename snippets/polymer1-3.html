@@ -1,0 +1,17 @@
+
+<paper-material elevation="2">
+  <paper-input label="Task"></paper-input>
+  <paper-input char-counter label="Username"></paper-input>
+  <paper-fab icon="icons:add" on-tap="postTask"></paper-fab>
+</paper-material>
+
+<template is="dom-if" if="{{!todo.length}}">
+  <paper-material>
+    <paper-item>Task list is empty</paper-item>
+  </paper-material>
+</template>
+
+<template is="dom-repeat" items="{{todo}}">
+  <todo-element user="{{item.user}}" task="{{item.task}}"></todo-element>
+</template>
+

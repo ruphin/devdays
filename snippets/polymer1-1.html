@@ -1,0 +1,17 @@
+
+<link rel="import" href="/vendor/polymer.html">
+
+<dom-module>
+  <template>
+    <style> /* My Pretty Button CSS */ </style>
+    <slot></slot>
+  </template>
+
+  <script>
+    class PrettyButton extends Polymer.Element {
+      static get properties() { /* ... */ }
+    }
+    customElements.define('pretty-button', PrettyButton);
+  </script>
+</dom-module>
+

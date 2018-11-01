@@ -1,0 +1,9 @@
+*
+!index.html
+!images
+!node_modules
+node_modules/*
+!node_modules/lit-html
+!node_modules/@gluon
+!node_modules/slidem
+!node_modules/fontfaceobserver
