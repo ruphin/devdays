@@ -5,17 +5,16 @@
   "author": "Goffert van Gool",
   "license": "MIT",
   "scripts": {
-    "build": "echo 'done'",
-    "dev": "browser-sync start --config browsersync.config.js",
-    "test": "karma start",
-    "guard": "karma start --no-single-run"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "slidem": "1.2.6"
   },
   "devDependencies": {
-    "browser-sync": "^2.24.4",
-    "connect-history-api-fallback": "^1.5.0"
+    "vite": "^8.3.3"
   },
-  "private": true
+  "private": true,
+  "type": "module"
 }
